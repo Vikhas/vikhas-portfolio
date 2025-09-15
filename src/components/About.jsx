@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import profileImg from "../images/vik2.jpg";
 
 export default function About() {
   const stats = [
@@ -56,7 +57,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl rotate-3"></div>
               <img 
-                src="src/images/vik2.JPG" 
+                src={profileImg} 
                 alt="Vikhas Somasundaram Giri"
                 className="relative rounded-3xl w-full h-[500px] object-cover shadow-2xl"
               />
