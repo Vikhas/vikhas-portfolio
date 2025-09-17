@@ -3,7 +3,7 @@ import React from "react";
 export default function Education() {
   const edu = [
     {degree:"MS Computer Science",school:"University of California, Davis",period:"Sep 2025 – Jun 2027 (expected)"},
-    {degree:"BE Computer Science and Engineering",school:"PSG iTech",period:"2019 – 2023, GPA: 9.47/10"}
+    {degree:"BE Computer Science and Engineering",school:"PSG Institute of Technology and Applied Research, India",period:"2019 – 2023, GPA: 9.47/10"}
   ];
 
   return (

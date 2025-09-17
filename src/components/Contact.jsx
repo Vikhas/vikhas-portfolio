@@ -31,20 +31,6 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: "📧",
-      title: "Email",
-      value: "vsgiri@ucdavis.edu",
-      link: "mailto:vsgiri@ucdavis.edu",
-      color: "from-blue-500 to-indigo-600"
-    },
-    {
-      icon: "📱",
-      title: "Phone",
-      value: "(341) 732-8313",
-      link: "tel:+13417328313",
-      color: "from-green-500 to-teal-600"
-    },
-    {
       icon: "📍",
       title: "Location",
       value: "Davis, CA",
@@ -223,54 +209,11 @@ export default function Contact() {
               viewport={{ once: true }}
               className="pt-8"
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Follow me</h4>
-              <div className="flex gap-4">
-                {[
-                  { icon: "💼", label: "LinkedIn", href: "https://www.linkedin.com/in/vikhassg/", color: "hover:text-blue-400" },
-                  { icon: "🐙", label: "GitHub", href: "#", color: "hover:text-gray-400" },
-                  { icon: "📧", label: "Email", href: "mailto:vsgiri@ucdavis.edu", color: "hover:text-red-400" }
-                ].map((social, index) => (
-                  <motion.a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.2, y: -2 }}
-                    whileTap={{ scale: 0.9 }}
-                    className={`text-3xl ${social.color} transition-colors duration-300`}
-                    title={social.label}
-                  >
-                    {social.icon}
-                  </motion.a>
-                ))}
-              </div>
             </motion.div>
           </motion.div>
         </div>
 
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to work together?</h3>
-            <p className="text-blue-200 mb-6 max-w-2xl mx-auto">
-              I'm always excited to take on new challenges and collaborate on innovative projects. 
-              Let's discuss how we can bring your ideas to life!
-            </p>
-            <motion.a
-              href="mailto:vsgiri@ucdavis.edu"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Start a Conversation
-            </motion.a>
-          </div>
-        </motion.div>
+       
       </div>
     </section>
   );

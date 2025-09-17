@@ -1,9 +1,7 @@
 export const siteMeta = {
   name: "Vikhas Somasundaram Giri",
   title: "Software Engineer | MS CS @ UC Davis (Incoming)",
-  email: "vsgiri@ucdavis.edu",
   location: "Davis, CA",
-  phone: "(341) 732-8313",
   linkedin: "https://www.linkedin.com/in/vikhassg/"
 };
 
